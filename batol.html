@@ -1,0 +1,129 @@
+export default function CarRacingGame() {
+  return (
+    <div className="flex flex-col items-center justify-center h-screen bg-gray-900">
+      <h1 className="text-white text-3xl font-bold mb-4">Car Racing Game</h1>
+      <canvas id="gameCanvas" className="border border-white"></canvas>
+      <script>
+        {`
+          const canvas = document.getElementById('gameCanvas');
+          const ctx = canvas.getContext('2d');
+          canvas.width = 800;
+          canvas.height = 400;
+
+          let car = { x: 100, y: 300, width: 50, height: 30, speed: 5 };
+          let keys = {};
+
+          window.addEventListener('keydown', (e) => { keys[e.key] = true; });
+          window.addEventListener('keyup', (e) => { keys[e.key] = false; });
+
+          function update() {
+            if (keys['ArrowUp'] && car.y > 0) car.y -= car.speed;
+            if (keys['ArrowDown'] && car.y < canvas.height - car.height) car.y += car.speed;
+            if (keys['ArrowLeft'] && car.x > 0) car.x -= car.speed;
+            if (keys['ArrowRight'] && car.x < canvas.width - car.width) car.x += car.speed;
+          }
+
+          function draw() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            export default function CarRacingGame() {
+      return (
+        <div className="flex flex-col items-center justify-center h-screen bg-gray-900">
+          <h1 className="text-white text-3xl font-bold mb-4">Car Racing Game</h1>
+          <canvas id="gameCanvas" className="border border-white"></canvas>
+          <script>
+            {`
+              const canvas = document.getElementById('gameCanvas');
+              const ctx = canvas.getContext('2d');
+              canvas.width = 800;
+              canvas.height = 400;
+
+              let car = { x: 100, y: 300, width: 50, height: 30, speed: 5 };
+              let keys = {};
+
+              window.addEventListener('keydown', (e) => { keys[e.key] = true; });
+              window.addEventListener('keyup', (e) => { keys[e.key] = false; });
+
+              function update() {
+                if (keys['ArrowUp'] && car.y > 0) car.y -= car.speed;
+                if (keys['ArrowDown'] && car.y < canvas.height - car.height) car.y += car.speed;
+                if (keys['ArrowLeft'] && car.x > 0) car.x -= car.speed;
+                if (keys['ArrowRight'] && car.x < canvas.width - car.width) car.x += car.speed;
+              }
+
+              function draw() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                ctx.fillStyle = 'red';
+                ctx.fillRect(car.x, car.y, car.width, car.height);
+              }
+
+              function gameLoop() {
+                update();
+                draw();
+                requestAnimationFrame(gameLoop);
+              }
+
+              gameLoop();
+            `}
+          </script>
+        </div>
+      );
+    }
+    ctx.fillStyle = 'red';
+            ctx.fillRect(car.x, car.y, car.width, car.height);
+          }
+
+          function gameLoop() {
+            update();
+            draw();
+            requestAnimationFrame(gameLoop);
+          }
+
+          gameLoop();
+        `}
+      </script>
+    </div>
+  );
+}
+export default function CarRacingGame() {
+  return (
+    <div className="flex flex-col items-center justify-center h-screen bg-gray-900">
+      <h1 className="text-white text-3xl font-bold mb-4">Car Racing Game</h1>
+      <canvas id="gameCanvas" className="border border-white"></canvas>
+      <script>
+        {`
+          const canvas = document.getElementById('gameCanvas');
+          const ctx = canvas.getContext('2d');
+          canvas.width = 800;
+          canvas.height = 400;
+
+          let car = { x: 100, y: 300, width: 50, height: 30, speed: 5 };
+          let keys = {};
+
+          window.addEventListener('keydown', (e) => { keys[e.key] = true; });
+          window.addEventListener('keyup', (e) => { keys[e.key] = false; });
+
+          function update() {
+            if (keys['ArrowUp'] && car.y > 0) car.y -= car.speed;
+            if (keys['ArrowDown'] && car.y < canvas.height - car.height) car.y += car.speed;
+            if (keys['ArrowLeft'] && car.x > 0) car.x -= car.speed;
+            if (keys['ArrowRight'] && car.x < canvas.width - car.width) car.x += car.speed;
+          }
+
+          function draw() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = 'red';
+            ctx.fillRect(car.x, car.y, car.width, car.height);
+          }
+
+          function gameLoop() {
+            update();
+            draw();
+            requestAnimationFrame(gameLoop);
+          }
+
+          gameLoop();
+        `}
+      </script>
+    </div>
+  );
+}
